@@ -17,7 +17,9 @@ patch:
   style/inline_preedit: true
   style/preedit_type: composition
 
+  style/label_format: "%s."
   style/layout/border_width: 1
+  style/layout/corner_radius: 0
 
   style/color_scheme: default
 
