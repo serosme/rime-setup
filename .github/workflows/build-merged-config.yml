@@ -1,0 +1,34 @@
+name: Build merged Rime config
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout upstream
+        uses: actions/checkout@v4
+        with:
+          repository: Mintimate/oh-my-rime
+          path: upstream-repo
+          fetch-depth: 1
+
+      - name: Checkout local
+        uses: actions/checkout@v4
+        with:
+          path: local-repo
+          fetch-depth: 1
+
+      - name: Merge upstream and local
+        run: |
+          mkdir -p merged
+          cp -r upstream-repo/* merged/
+          cp -r local-repo/* merged/
+
+      - name: Upload merged config artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: rime-config
+          path: merged/
