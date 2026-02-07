@@ -4,5 +4,4 @@ patch:
     - { schema: rime_mint }
   switcher/hotkeys:
     - Control+Shift+bar
-  menu/page_size: 10
   ascii_composer/switch_key/Shift_L: noop
