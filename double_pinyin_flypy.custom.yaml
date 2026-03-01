@@ -16,11 +16,15 @@ patch:
       states: [简体, 繁体]
       reset: 0
     - name: ascii_punct
-      states: ["，。", "，．"]
+      states: [。, .]
       reset: 0
     - name: chaifen
       states: [🙈, 🐵]
       reset: 0
+  punctuator/half_shape:
+    /: /
+    '{': 「
+    '}': 」
   # translator/preedit_format/+:
   #   - xform/ //
   # key_binder/bindings/+:
