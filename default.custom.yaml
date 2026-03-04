@@ -5,3 +5,5 @@ patch:
   switcher/hotkeys:
     - Control+Shift+bar
   ascii_composer/switch_key/Shift_L: noop
+  key_binder/bindings/+:
+    - { accept: "Shift+space", toggle: "", when: always }
