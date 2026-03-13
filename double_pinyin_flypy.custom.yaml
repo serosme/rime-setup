@@ -1,31 +1,16 @@
 patch:
   switches:
     - name: ascii_mode
-      states: [中文, 英文]
-      reset: 1
-    - name: emoji_suggestion
-      states: [😣️, 😁️]
+      states: [中, Ａ]
+    - name: ascii_punct
+      states: [¥, $]
+    - name: traditionalization
+      states: [简, 繁]
+    - name: emoji
+      states: [💀, 😄]
       reset: 0
     - name: full_shape
       states: [半角, 全角]
-      reset: 0
-    - name: tone_display
-      states: [声杳, 声起]
-      reset: 0
-    - name: transcription
-      states: [简体, 繁体]
-      reset: 0
-    - name: ascii_punct
-      states: [。, .]
-      reset: 0
-    - name: chaifen
-      states: [🙈, 🐵]
-      reset: 0
-  punctuator/half_shape:
-    /: /
-    '{': 「
-    '}': 」
-  # translator/preedit_format/+:
-  #   - xform/ //
-  # key_binder/bindings/+:
-  #   - {accept: "Return", send: "Shift+Return", when: composing}
+    - name: search_single_char
+      states: [正常, 单字]
+      abbrev: [词, 单]

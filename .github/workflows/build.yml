@@ -1,4 +1,4 @@
-name: Build merged Rime config
+name: Build
 
 on:
   workflow_dispatch:
@@ -11,7 +11,7 @@ jobs:
       - name: Checkout upstream
         uses: actions/checkout@v4
         with:
-          repository: Mintimate/oh-my-rime
+          repository: iDvel/rime-ice
           path: upstream-repo
           fetch-depth: 1
 
