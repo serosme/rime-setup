@@ -11,6 +11,8 @@ patch:
     windowsterminal.exe: {ascii_mode: true}
     explorer.exe: {ascii_mode: true}
 
+    tools.exe: { ascii_mode: true }
+
   style/label_format: '%s.'
   style/layout/border_width: 1
   style/layout/corner_radius: 0
