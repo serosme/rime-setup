@@ -2,19 +2,21 @@ patch:
   show_notifications: false
 
   app_options:
-    acmirage.exe: {ascii_mode: true}
-    acvalhalla.exe: {ascii_mode: true}
-    acshadows.exe: {ascii_mode: true}
-    cyberpunk2077.exe: {ascii_mode: true}
+    acmirage.exe: { ascii_mode: true }
+    acvalhalla.exe: { ascii_mode: true }
+    acshadows.exe: { ascii_mode: true }
+    cyberpunk2077.exe: { ascii_mode: true }
 
-    powershell.exe: {ascii_mode: true}
-    windowsterminal.exe: {ascii_mode: true}
-    explorer.exe: {ascii_mode: true}
+    powershell.exe: { ascii_mode: true }
+    windowsterminal.exe: { ascii_mode: true }
+    explorer.exe: { ascii_mode: true }
+
+    zed.exe: { ascii_mode: true }
 
     electron.exe: { ascii_mode: true }
     tools.exe: { ascii_mode: true }
 
-  style/label_format: '%s.'
+  style/label_format: "%s."
   style/layout/border_width: 1
   style/layout/corner_radius: 0
 
